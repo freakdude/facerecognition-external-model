@@ -10,7 +10,7 @@ So, please. Think seriously about data security before running this service outs
 ## Docker
 The fastest way to get this up and running without manual installation and configuration is a docker image. You only have to define the api key and the exposed port:
 ```sh
-docker build -t facerecognition https://github.com/matiasdelellis/facerecognition-external-model.git
+docker build -t facerecognition https://github.com/freakdude/facerecognition-external-model.git
 docker run --rm -i -p 8080:5000 -e API_KEY="super-secret" facerecognition
 # possible is also api key as file
 docker run --rm -i -p 8080:5000 -v /path/to/api.key:/app/api.key facerecognition
@@ -25,7 +25,7 @@ docker run --rm -i -p 8080:5000 -v /path/to/api.key:/app/api.key facerecognition
 ### Install
 Just clone this repo and install the resnet models. Use FACE_MODEL to specify the desired model.
 ```
-[matias@laptop ~]$ git clone https://github.com/matiasdelellis/facerecognition-external-model.git
+[matias@laptop ~]$ git clone https://github.com/freakdude/facerecognition-external-model.git
 Clonando en 'facerecognition-external-model'...
 remote: Enumerating objects: 4, done.
 remote: Counting objects: 100% (4/4), done.
